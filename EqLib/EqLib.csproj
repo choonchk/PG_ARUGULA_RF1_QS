@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CAA70BB-5804-464B-B2AF-31558523DBB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EqLib</RootNamespace>
+    <AssemblyName>EqLib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Encrypt|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Encrypt\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Encrypt|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Encrypt\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Encrypt|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Encrypt\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Agilent.AgM9300.Interop">
+      <HintPath>Lib\Agilent.AgM9300.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Agilent.AgNA.Interop, Version=2.0.4.0, Culture=neutral, PublicKeyToken=12e52ea699e4c8d4, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Lib\Agilent.AgNA.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.Logger">
+      <HintPath>..\..\..\System\Avago.ATF.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.Shares">
+      <HintPath>..\..\..\System\Avago.ATF.Shares.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.StandardLibrary">
+      <HintPath>..\..\..\System\Avago.ATF.StandardLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Driver, Version=1.4.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL" />
+    <Reference Include="Ivi.Driver.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Program Files\IVI Foundation\IVI\Bin\Primary Interop Assemblies\Ivi.Driver.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Visa.Interop, Version=5.5.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_32\Ivi.Visa.Interop\5.5.0.0__a128c98f1d7717c1\Ivi.Visa.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Keysight.KtM9420.Interop">
+      <HintPath>Lib\Keysight.KtM9420.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Keysight.KtMDsr.Interop, Version=1.0.10.1, Culture=neutral, PublicKeyToken=ced78d295d1e0f2b, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Lib\Keysight.KtMDsr.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NationalInstruments.Common, Version=19.1.40.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL" />
+    <Reference Include="NationalInstruments.DAQmx, Version=19.1.40.0, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\National Instruments\MeasurementStudioVS2012\DotNET\Assemblies (64-bit)\Current\NationalInstruments.DAQmx.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.LabVIEW.Interop, Version=1.5.0.0, Culture=neutral, PublicKeyToken=daeb5dc76be4e32a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\assembly\GAC_MSIL\NationalInstruments.LabVIEW.Interop\1.5.0.0__daeb5dc76be4e32a\NationalInstruments.LabVIEW.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.LabVIEW.RefnumTypes, Version=1.1.0.0, Culture=neutral, PublicKeyToken=daeb5dc76be4e32a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\NationalInstruments.LabVIEW.RefnumTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.ModularInstruments.ModularInstrumentsSystem, Version=1.4.45.27, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\NationalInstruments.ModularInstruments.ModularInstrumentsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.ModularInstruments.NIDigital.Fx40, Version=19.0.0.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\IVI Foundation\IVI\Microsoft.NET\Framework32\v4.0.30319\NationalInstruments.ModularInstruments.NIDigital 19.0.0\NationalInstruments.ModularInstruments.NIDigital.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.ModularInstruments.TClock.Fx40, Version=3.2.0.49153, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\IVI Foundation\IVI\Microsoft.NET\Framework64\v4.0.30319\NationalInstruments.ModularInstruments.TClock 3.2.0\NationalInstruments.ModularInstruments.TClock.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.RFmx.InstrMX.Fx40, Version=2.5.0.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\National Instruments\MeasurementStudioVS2010\DotNET\Assemblies\Current\NationalInstruments.RFmx.InstrMX.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.RFmx.LteMX.Fx40">
+      <HintPath>..\Lib\NationalInstruments.RFmx.LteMX.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.RFmx.NRMX.Fx40, Version=3.0.0.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\National Instruments\MeasurementStudioVS2010\DotNET\Assemblies\Current\NationalInstruments.RFmx.NRMX.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.RFmx.SpecAnMX.Fx40, Version=2.2.40.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\National Instruments\MeasurementStudioVS2010\DotNET\Assemblies\Current\NationalInstruments.RFmx.SpecAnMX.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.SystemConfiguration, Version=15.30.40.49152, Culture=neutral, PublicKeyToken=1109e9caaa0bff6a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\NationalInstruments.SystemConfiguration.dll</HintPath>
+    </Reference>
+    <Reference Include="ProductionLib">
+      <HintPath>..\Lib\ProductionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Chassis.cs" />
+    <Compile Include="EqDC\Aemulus430e.cs" />
+    <Compile Include="EqDC\Aemulus471e.cs" />
+    <Compile Include="EqDC\iEqDC.cs" />
+    <Compile Include="EqDC\NI4139.cs" />
+    <Compile Include="EqDC\NI4143.cs" />
+    <Compile Include="EqDC\NI4154.cs" />
+    <Compile Include="EqDC\NI6570Pmu.cs" />
+    <Compile Include="EqHSDIO\EqHSDIObase.cs" />
+    <Compile Include="EqHSDIO\KeysightDSR.cs" />
+    <Compile Include="EqNA\ENA.cs" />
+    <Compile Include="EqNA\naEnum.cs" />
+    <Compile Include="EqNA\NetworkAnalyzerAbstract.cs" />
+    <Compile Include="EqNA\NetworkAnalyzerAbstractDataType.cs" />
+    <Compile Include="EqNA\Diva.cs" />
+    <Compile Include="EqNA\Topaz.cs" />
+    <Compile Include="EqNA\ZNBT.cs" />
+    <Compile Include="EqNetAn\Keysight_E5071C.cs" />
+    <Compile Include="EqRF\iEqRF.cs" />
+    <Compile Include="EqRF\KeysightReferenceClock.cs" />
+    <Compile Include="EqRF\NIRFMX.cs" />
+    <Compile Include="EqRF\NIVST.cs" />
+    <Compile Include="EqRF\NIVST_Rfmx.cs" />
+    <Compile Include="Eq_ENA.cs" />
+    <Compile Include="EVM.cs" />
+    <Compile Include="EqHandler.cs" />
+    <Compile Include="EqMultisite.cs" />
+    <Compile Include="EqHSDIO\NI6570.cs" />
+    <Compile Include="EqHSDIO\None.cs" />
+    <Compile Include="LibEqmtCommon.cs" />
+    <Compile Include="SupplierWrappers\Enum.cs" />
+    <Compile Include="SupplierWrappers\EquipSA.cs" />
+    <Compile Include="SupplierWrappers\niDCPower.cs" />
+    <Compile Include="SupplierWrappers\niEDGESA.cs" />
+    <Compile Include="SupplierWrappers\niHSDIO.cs" />
+    <Compile Include="SupplierWrappers\niRFSA.cs" />
+    <Compile Include="SupplierWrappers\niRFSG.cs" />
+    <Compile Include="SupplierWrappers\niVSTPowerServo.cs" />
+    <Compile Include="SupplierWrappers\rsnrpz.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EqRF\KeysightVXT.cs" />
+    <Compile Include="EqDC\KS9195Pmu.cs" />
+    <Compile Include="EqPM.cs" />
+    <Compile Include="EqSwitchMatrix.cs" />
+    <Compile Include="SupplierWrappers\si2250.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\Agilent.AgM9018.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\Agilent.AgM9300.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\Agilent.AgNA.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\Keysight.KtM9420.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\Keysight.KtMDsr.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\N7614B.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\NationalInstruments.DAQmx.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\NationalInstruments.SystemConfiguration.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\rsnrpz_32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\rsnrpz_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClothoLibAlgo\ClothoLibAlgo.csproj">
+      <Project>{220a6f97-0a99-4db8-aae6-b41b681723e5}</Project>
+      <Name>ClothoLibAlgo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IqWaveform\IqWaveform.csproj">
+      <Project>{3b4d3680-1358-4983-b326-a8658ed1b08c}</Project>
+      <Name>IqWaveform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StopWatchManager\StopWatchManager.csproj">
+      <Project>{884d3bd0-9f3e-49c1-89a6-132359a07e13}</Project>
+      <Name>StopWatchManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EqNA\NAEquipmentDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del "$(SolutionDir)Lib\$(TargetFileName)
+xcopy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)Lib"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

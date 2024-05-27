@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2487CD75-7E93-4322-8F08-158DA1C11768}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestPlanCommon</RootNamespace>
+    <AssemblyName>TestPlanCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Avago.ATF.Logger">
+      <HintPath>..\..\..\System\Avago.ATF.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.Outlier">
+      <HintPath>..\..\..\System\Avago.ATF.Outlier.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.Shares">
+      <HintPath>..\..\..\System\Avago.ATF.Shares.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.StandardLibrary">
+      <HintPath>..\..\..\System\Avago.ATF.StandardLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ClothoLibAlgo_Legacy">
+      <HintPath>..\Lib\ClothoLibAlgo_Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="InstrLib">
+      <HintPath>..\Lib\InstrLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="M2Mqtt.Net">
+      <HintPath>..\Lib\M2Mqtt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ProductionLib">
+      <HintPath>..\Lib\ProductionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestLib_Legacy">
+      <HintPath>..\Lib\TestLib_Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="ZDB.ShareLib">
+      <HintPath>..\Lib\ZDB.ShareLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonModel\GuCalibrationModel.cs" />
+    <Compile Include="CommonModel\ITesterSite.cs" />
+    <Compile Include="CommonModel\MultiSiteTestRunner.cs" />
+    <Compile Include="PaModel\PaProductionTestPlan.cs" />
+    <Compile Include="PaModel\PaTestConditionFactory.cs" />
+    <Compile Include="PaModel\PaTestConditionReader.cs" />
+    <Compile Include="PaModel\PaTestFactory.cs" />
+    <Compile Include="SParaModel\CalibrationController.cs" />
+    <Compile Include="SParaModel\CalibrationModel.cs" />
+    <Compile Include="SParaModel\CalibrationModel3.cs" />
+    <Compile Include="CommonModel\ClothoConfigurationDataObject.cs" />
+    <Compile Include="CommonModel\TcfSheetReader.cs" />
+    <Compile Include="CommonModel\TestPlanStateModel.cs" />
+    <Compile Include="SParaModel\FbarCommonTestFactory.cs" />
+    <Compile Include="SParaModel\FbarTestFactory3.cs" />
+    <Compile Include="SParaModel\ProjectSpecificFactor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SParaModel\SParaEnaTestConditionReader.cs" />
+    <Compile Include="SParaModel\SParaProductionTestPlan.cs" />
+    <Compile Include="SParaModel\SParaProductionTestPlanBase.cs" />
+    <Compile Include="SParaModel\SParaResultBuilder.cs" />
+    <Compile Include="SParaModel\SParaTestConditionFactory.cs" />
+    <Compile Include="SParaModel\SParaTestConditionReader.cs" />
+    <Compile Include="SParaModel\SParaTestFactory.cs" />
+    <Compile Include="SParaModel\SParaTestManager.cs" />
+    <Compile Include="SParaToBeObsoleted\AvagoGUWrapper.cs" />
+    <Compile Include="SParaToBeObsoleted\ObsoleteTestPlan1.cs" />
+    <Compile Include="SParaToBeObsoleted\ProdLib1Wrapper.cs" />
+    <Compile Include="CommonModel\TcfHeaderGenerator.cs" />
+    <Compile Include="ToBeObsoleted\TestTimeFile.cs" />
+    <Compile Include="CommonModel\UsePreviousTcfModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalLib\CalLib.csproj">
+      <Project>{617c4b16-7bd6-40f0-bf0c-e90e0e843db5}</Project>
+      <Name>CalLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClothoLibAlgo\ClothoLibAlgo.csproj">
+      <Project>{220a6f97-0a99-4db8-aae6-b41b681723e5}</Project>
+      <Name>ClothoLibAlgo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EqLib\EqLib.csproj">
+      <Project>{4caa70bb-5804-464b-b2af-31558523dbb4}</Project>
+      <Name>EqLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GuCal\GuCal.csproj">
+      <Project>{2d831cbc-e343-46d5-9e84-0997ad932d0f}</Project>
+      <Name>GuCal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibFBAR_TOPAZ\LibFBAR_TOPAZ.csproj">
+      <Project>{e9cabfeb-a5d8-4ebe-9e30-4a6e66b46f86}</Project>
+      <Name>LibFBAR_TOPAZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibMQTTDriver\LibMQTTDriver.csproj">
+      <Project>{cb3edd09-dc48-4d06-816c-44321de3a107}</Project>
+      <Name>LibMQTTDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProductionLib\ProductionLib2.csproj">
+      <Project>{d1ba6f01-be29-4c40-b371-b52692a56c9f}</Project>
+      <Name>ProductionLib2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SParamTestCommon\SParamTestCommon.csproj">
+      <Project>{eb9fbd1c-de94-4323-9cc7-50dd52a2d88b}</Project>
+      <Name>SParamTestCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StopWatchManager\StopWatchManager.csproj">
+      <Project>{884d3bd0-9f3e-49c1-89a6-132359a07e13}</Project>
+      <Name>StopWatchManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestLib\TestLib.csproj">
+      <Project>{81fe14cb-677d-4f30-91b4-1bf604faf2bd}</Project>
+      <Name>TestLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

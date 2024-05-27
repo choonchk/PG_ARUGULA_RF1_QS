@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EqLib.LibEqmtCommon" Collapsed="true">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAIABAEAAAJAAACQAAAAQAAQA=</HashCode>
+      <FileName>LibEqmtCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EqLib.NA.NetworkAnalyzerAbstract" Collapsed="true">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EoTRABgAAQFAAIChFAGIEkQAEEIICUmCAAEiAIAAQgA=</HashCode>
+      <FileName>EqNA\NetworkAnalyzerAbstract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EqLib.NA.Ena">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EoTRABgAAQBAAAAgEAAIEAQAAEAICkmAAAEgAAAAAAA=</HashCode>
+      <FileName>EqNA\ENA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EqLib.NA.Topaz" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EqNA\Topaz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EqLib.NA.Znbt">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgRBABgAAQBAAAAgEAAIEAAQEEIACUmAAAEgAAAAAAA=</HashCode>
+      <FileName>EqNA\ZNBT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EqLib.NA.naEnum">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="EqLib.NA.naEnum.ESweepType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ECalibrationStandard" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ETriggerSource" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.EModeSetting" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ESweepMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.EOnOff" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ECalStdMedia" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ESFormat" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ESParametersDef" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ECalStdLengthType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.EBalunTopology" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.EFormatData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.ETriggerMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="EqLib.NA.naEnum.EFormat" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EqNA\naEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EqNA\naEnum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

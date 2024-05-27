@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9B9D2C9-45EF-471F-B841-DE5AD7F2D657}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestPlan_NUWAFull</RootNamespace>
+    <AssemblyName>TestPlan_NUWAFull</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Avago.ATF.Logger">
+      <HintPath>..\..\..\System\Avago.ATF.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.Outlier">
+      <HintPath>..\..\..\System\Avago.ATF.Outlier.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.Shares">
+      <HintPath>..\..\..\System\Avago.ATF.Shares.dll</HintPath>
+    </Reference>
+    <Reference Include="Avago.ATF.StandardLibrary">
+      <HintPath>..\..\..\System\Avago.ATF.StandardLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="AvagoGU_Legacy">
+      <HintPath>..\Lib\AvagoGU_Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="ClothoLibAlgo_Legacy">
+      <HintPath>..\Lib\ClothoLibAlgo_Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="ClothoLibStandard, Version=1.0.1.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ClothoLibStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Header_Processor, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Header_Processor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="InstrLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\InstrLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ModularZT64">
+      <HintPath>..\Lib\ModularZT64.dll</HintPath>
+    </Reference>
+    <Reference Include="ProductionLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ProductionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SnP_BuddyFileBuilder">
+      <HintPath>..\Lib\SnP_BuddyFileBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TCPHandlerProtocol">
+      <HintPath>..\Lib\TCPHandlerProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="TestLib_Legacy, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\TestLib_Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="ZDB.ShareLib">
+      <HintPath>..\Lib\ZDB.ShareLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\TestPlanDriver\TestPlan.cs">
+      <Link>TestPlan.cs</Link>
+    </None>
+    <Compile Include="ProductSpecificPa.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProductSpecificSPara.cs" />
+    <Compile Include="TesterSite.cs" />
+    <Compile Include="TestPlan_NUWAFbar.cs" />
+    <Compile Include="TestPlan_NUWAFull.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClothoLibAlgo\ClothoLibAlgo.csproj">
+      <Project>{220a6f97-0a99-4db8-aae6-b41b681723e5}</Project>
+      <Name>ClothoLibAlgo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EqLib\EqLib.csproj">
+      <Project>{4caa70bb-5804-464b-b2af-31558523dbb4}</Project>
+      <Name>EqLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GuCal\GuCal.csproj">
+      <Project>{2d831cbc-e343-46d5-9e84-0997ad932d0f}</Project>
+      <Name>GuCal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IqWaveform\IqWaveform.csproj">
+      <Project>{3b4d3680-1358-4983-b326-a8658ed1b08c}</Project>
+      <Name>IqWaveform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibFBAR_TOPAZ\LibFBAR_TOPAZ.csproj">
+      <Project>{e9cabfeb-a5d8-4ebe-9e30-4a6e66b46f86}</Project>
+      <Name>LibFBAR_TOPAZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibMQTTDriver\LibMQTTDriver.csproj">
+      <Project>{cb3edd09-dc48-4d06-816c-44321de3a107}</Project>
+      <Name>LibMQTTDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProductionLib\ProductionLib2.csproj">
+      <Project>{d1ba6f01-be29-4c40-b371-b52692a56c9f}</Project>
+      <Name>ProductionLib2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SParamTestCommon\SParamTestCommon.csproj">
+      <Project>{eb9fbd1c-de94-4323-9cc7-50dd52a2d88b}</Project>
+      <Name>SParamTestCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StopWatchManager\StopWatchManager.csproj">
+      <Project>{884d3bd0-9f3e-49c1-89a6-132359a07e13}</Project>
+      <Name>StopWatchManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestLib\TestLib.csproj">
+      <Project>{81fe14cb-677d-4f30-91b4-1bf604faf2bd}</Project>
+      <Name>TestLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestPlanCommon\TestPlanCommon.csproj">
+      <Project>{2487cd75-7e93-4322-8f08-158da1c11768}</Project>
+      <Name>TestPlanCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del "$(SolutionDir)Lib\$(TargetFileName)
+xcopy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)Lib"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,248 @@
+﻿CatID	keyID	param	param_suffix	suffixID	suffixCatID	Notes
+1	101	F				Fbar
+1	102	PT				PA Tx 
+1	103	PR				PA Rx
+1	104	M				MISC
+1	105	S				Sytem
+
+2	1	SBIN				
+2	2	HBIN				
+2	3	DIE				
+2	3	DIE	X	3A	3	
+2	3	DIE	Y	3B	3	
+2	4	SITE				
+2	5	TIME				
+2	5	TIME	PaTest	5A	3	
+2	5	TIME	FbarTest	5B	3	
+2	6	TOTAL	TEST	6A	3	
+2	7	LOT	ID	7A	3	
+2	8	WAFER	ID	8A	3	
+2	9	PassFail				
+2	10	TimeStamp				
+2	11	IndexTime				
+2	12	PartSN				
+2	13	SWBinName				
+2	14	HWBinName				
+2	201	Ibatt				
+2	201	Ibatt	Q	201A	3	
+2	201	Ibatt	MaxGain	201B	3	
+2	201	Ibatt	P2dB	201C	3	
+2	201	Ibatt	P3dB	201D	3	
+2	202	Ibias				
+2	202	Ibias	Q	202A	3	
+2	203	Idd				
+2	203	Idd	Q	203A	3	
+2	204	Icc				
+2	204	Icc	Q	204A	3	
+2	204	Icc	MaxGain	204B	3	
+2	204	Icc	P2dB	204C	3	
+2	204	Icc	P3dB	204D	3	
+2	205	Itotal				
+2	205	Itotal	Q	205A	3	
+2	205	Itotal	MaxGain	205B	3	
+2	205	Itotal	P2dB	205C	3	
+2	205	Itotal	P3dB	205D	3	
+2	206	Isdata	Tx	206A	3	
+2	206	Isdata	Rx	206B	3	
+2	207	Isclk	Tx	207A	3	
+2	207	Isclk	Rx	207B	3	
+2	208	Ivio	Tx	208A	3	
+2	208	Ivio	Rx	208B	3	
+2	209	Pin				
+2	209	Pin	MaxGain	209A	3	
+2	209	Pin	P1dB	209B	3	
+2	209	Pin	P2dB	209C	3	
+2	209	Pin	P3dB	209D	3	
+2	210	Pout				
+2	210	Pout	MaxGain	210A	3	
+2	210	Pout	P1dB	210B	3	
+2	210	Pout	P2dB	210C	3	
+2	210	Pout	P3dB	210D	3	
+2	210	Pout	(^atPin)	210E	3	
+2	211	Gain				
+2	211	Gain	MaxGain	211A	3	
+2	211	Gain	P1dB	211B	3	
+2	211	Gain	P2dB	211C	3	
+2	211	Gain	P3dB	211D	3	
+2	211	Gain	IIP3	211E	3	
+2	211	Gain	Delta	211F	3	
+2	211	Gain	Tx	211G	3	
+2	211	Gain	Fltns	211H	3	
+2	211	Gain	GPS	211I	3	
+2	211	Gain	GPS-Rel	211J	3	
+2	211	Gain	ISM	211K	3	
+2	211	Gain	ISM-Rel	211L	3	
+2	211	Gain	H2	211M	3	
+2	211	Gain	H2-Rel	211N	3	
+2	211	Gain	H3	211O	3	
+2	211	Gain	H3-Rel	211P	3	
+2	211	Gain	5G	211Q	3	
+2	211	Gain	Rx	211R	3	
+2	211	Gain	Rx-Phase	211S	3	
+2	212	PAE				
+2	212	PAE	5G-Rel	212A	3	
+2	212	PAE	MaxGain	212B	3	
+2	212	PAE	P2dB	212C	3	
+2	212	PAE	P3dB	212D	3	
+2	213	(^TxLeakage)				any string start with "TxleakageB"
+2	214	IM3				
+2	215	IIP3				
+2	216	PowerDrop	Delta	216A	3	
+2	217	GainLinearity				
+2	218	ACLR	1L	218A	3	
+2	218	ACLR	1U	218B	3	
+2	218	ACLR	2L	218C	3	
+2	218	ACLR	2U	218D	3	
+2	218	E-ACLR	L	218E	3	
+2	218	E-ACLR	U	218F	3	
+2	219	PoutSettingTime				
+2	219	PoutSettingTime	Off	219A	3	
+2	220	H2				
+2	221	H2at2G				
+2	222	H3				
+2	223	ForwardIso				
+2	224	Pcon				
+2	225	Ieff				
+2	226	RL				
+2	227	GD	Ripple	227A	3	
+2	228	ISO	LNA-Rev	228A	3	
+2	228	ISO	Tx	228B	3	
+2	228	ISO	Rx	228C	3	
+2	229	ATT				
+2	229	ATT	Integrated	229A	3	
+2	230	Ripple				
+2	231	NF				
+2	232	Temperature				
+2	233	MIPI				
+2	233	MIPI	ReadTxPID	233A	3	
+2	233	MIPI	ReadRxPID	233B	3	
+2	233	MIPI	ReadTxMID	233C	3	
+2	233	MIPI	ReadRxMID	233D	3	
+2	233	MIPI	ReadTxUSID	233E	3	
+2	233	MIPI	ReadRxUSID	233F	3	
+2	233	MIPI	ReadTxReg	233G	3	
+2	233	MIPI	ReadRxReg	233H	3	
+2	233	MIPI	OTPBURN	233I	3	
+2	233	MIPI	Loop-OTPBURN	233J	3	
+2	233	MIPI	OTPBURN-RX	233K	3	
+2	233	MIPI	Loop-OTPBURN-RX	233L	3	
+2	233	MIPI	TXQC	233M	3	
+2	233	MIPI	RXQC	233N	3	
+2	233	MIPI	TEMP	233O	3	
+2	233	MIPI	UNITID	233P	3	
+2	234	IL				
+2	235	OTPSiteNo				
+2	236	TestSiteNo				
+2	237	Alignment	Flag	237A	3	
+2	238	(^Ibatt-)				
+2	239	(^Ibias-)				
+2	240	(^Idd-)				
+2	241	(^Icc-)				
+2	242	(^Itotal-)				
+2	243	(^Isdata-)				
+2	244	(^Isclk-)				
+2	245	(^Ivio-)				
+2	246	(^Pin-)				
+2	247	(^Pout-)				
+2	248	(^Gain-)				
+2	249	(^PAE-)				
+2	250	(^PowerDrop-)				
+2	251	(^ACLR-)				
+2	252	(^E-ACLR-)				
+2	253	(^PoutSettingTime-)				
+2	254	(^GD-)				
+2	255	(^ISO-)				
+
+4	401	(^B\d+)				any string start with "B", follow by number
+4	402	MBTHRU				
+4	403	HBTHRU				
+4	404	DCS				
+4	405	PCS				
+
+5	501	PDM				Power Down Mode
+5	502	SWONLY				SW only Mode
+5	503	HPMA				HPM APT
+5	504	HPME				HPM ET
+5	505	LPM				LPM
+5	506	(^G\d+)				any string start with "G", follow by number, LNA Gain Mode
+5	507	HP				HP
+
+6	601	CW				CW
+6	602	WCDMA				WCDMA
+6	603	HSUPA				HSUPA
+6	604	HSDPA				HSDPA
+6	605	LFUQ				LTE / FDD / UPLINK / QPSK
+6	606	LFU1				LTE / FDD / UPLINK / 16QAM
+6	607	LFU6				LTE / FDD / UPLINK / 64QAM
+6	608	LTUQ				LTE / TDD / UPLINK / QPSK
+6	609	LTU1				LTE / TDD / UPLINK / 16QAM
+6	610	LTU6				LTE / TDD / UPLINK / 64QAM
+6	611	GSM				
+6	612	EDGE				
+6	613	TDSCDMA				
+6	614	TWOTONE				IIP3 test
+
+7	701	(^GTC\d+)				any string start with "GTC", follow by number
+7	702	(^TC\d+)				any string start with "TC", follow by number
+7	703	(^TS\d+)				any string start with "TS", follow by number
+7	704	(RB$)				end "RB"
+7	705	(S$)				end "S"
+7	706	LFU6				
+7	707	LTUQ				
+7	708	LTU1				
+7	709	LTU6				
+7	710	GSM				GSM also used by Band 404
+7	711	EDGE				
+7	712	TDSCDMA				
+7	713	TWOTONE				
+7	714	LTE							
+7	714	LTE	FDD	714A	8	
+7	714	LTE	TDD	714B	8	
+7	714	LTE	UPLINK	714C	8	
+7	714	LTE	QPSK	714D	8	
+7	714	LTE	16QAM	714F	8	
+7	714	LTE	64QAM	714G	8	
+7	714	LTE	QPSK	714H	8	
+7	714	LTE	16QAM	714I	8	
+
+8	801	Lower				IIP3 Test Lower 
+8	802	Upper				IIP3 Test Upper
+8	803	Phase				for Spara Test 
+8	804	BEL				for Spara Test 
+8	805	MB				for Spara Test 
+8	806	BEH				for Spara Test 
+8	807	MAX				for Spara Test 
+8	808	MIN				for Spara Test 
+
+9	901	Sweep				
+9	902	FixedPin				
+9	903	FixedPout				
+
+10	1001	(\d+dBm$)				any string end with number + "dBm"
+11	1101	(\d+MHz$)				any string end with number + "MHz"
+11	1102	(\d+GHz$)				any string end with number + "GHz"
+12	1201	(^CH\d+)				any string start with "CH" + number
+13	1301	(^S\d+)				any string start with "S" + number
+13	1302	(^GDEL\d+)				any string start with "GDEL" + number
+
+14	1401	(^ANT)				any string start with "ANT"
+14	1402	(^IN)				any string start with "IN"
+14	1403	(^OUT)				any string start with "OUT"
+
+15	1501	(\d+V$)				any string end with number + "V"
+15	1502	(\d+Vcc$)				any string end with number + "Vcc"
+
+16	1601	(\d+Vdd$)				any string end with number + "Vdd"
+16	1602	(\d+Vlna$)				any string end with number + "Vlna"
+
+
+17	1701	(^0x[0-9A-F][0-9A-F]$)				any string start with "0x"2 hex digits, first digit 0-F, second digit 0-F
+17	1702	(^DAC)	(^0x[0-9A-F][0-9A-F]$)	1702A	19	DAC_BC, DACQ1_00
+
+18	1801	RT				Room Temp
+18	1802	LT				Low Temp
+18	1803	HT				Hot Temp
+
+98	9801	x			'x' as place holder	
+
+99	9901	note				free text at the end of header	
